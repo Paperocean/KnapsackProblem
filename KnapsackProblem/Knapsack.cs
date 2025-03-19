@@ -23,7 +23,7 @@ namespace KnapsackProblem
                 Ratio = (weight == 0) ? double.MaxValue : (double)value / weight;
             }
             public int CompareTo(Item other) => other.Ratio.CompareTo(this.Ratio);
-            public override string ToString() => $"Id: {Id}, V: {Value}, W: {Weight}, R: {Ratio:F2}\n";
+            public override string ToString() => $"Id: {Id}, V: {Value}, W: {Weight}, R: {Ratio:F2}{System.Environment.NewLine}";
         }
         public class Result
         {
@@ -33,13 +33,13 @@ namespace KnapsackProblem
 
             public override string ToString()
             {
-                var result = "Selected items:\n";
+                var result = $"Selected items:{System.Environment.NewLine}";
                 foreach (var item in SelectedItems)
                 {
                     result += $"{item}";
                 }
-                result += $"Total value: {TotalValue}\n";
-                result += $"Total weight: {TotalWeight}\n";
+                result += $"Total value: {TotalValue}{System.Environment.NewLine}";
+                result += $"Total weight: {TotalWeight}{System.Environment.NewLine}\n";
                 return result;
             }
         }

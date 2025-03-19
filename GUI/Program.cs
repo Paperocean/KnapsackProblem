@@ -1,4 +1,4 @@
-namespace KnapsackProblem.GUI
+namespace GUI
 {
     internal static class Program
     {

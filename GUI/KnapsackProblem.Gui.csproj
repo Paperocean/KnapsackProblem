@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KnapsackProblem.Tests\KnapsackProblem.Tests.csproj" />
     <ProjectReference Include="..\KnapsackProblem\KnapsackProblem.csproj" />
   </ItemGroup>
 
